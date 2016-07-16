@@ -13,3 +13,6 @@ class Main extends PluginBase implements Listener {
     $this->getLogger()->info(C::GREEN."Activated!");
     $this->getServer()->getPluginManager()->registerEvents($this,$this);
   }
+  public function onDisable(){
+    $this->getLogger()->info(C::RED."Deactivated!");
+  }
