@@ -6,3 +6,4 @@ author: UltimateDevs
 commands
   nick:
     description: "Nick yourself with a RandomNickname!"
+    aliases: [n,nickname]
