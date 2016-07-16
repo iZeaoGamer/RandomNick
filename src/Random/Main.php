@@ -18,3 +18,11 @@ class Main extends PluginBase implements Listener {
   public function onDisable(){
     $this->getLogger()->info(C::RED."Deactivated!");
   }
+  
+  public function onCommand(CommandSender $s, Command $cmd, array $args){
+    switch(strtolower($cmd)){
+      case "nick":
+        if(count($args) != 1){
+                    $sender->sendMessage(C::ORANGE."Usage : /nick random");
+                    return;
+        }
