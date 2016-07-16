@@ -3,6 +3,7 @@
 namespace Random;
 
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Random;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\Player;
