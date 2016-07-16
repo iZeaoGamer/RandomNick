@@ -7,3 +7,9 @@ commands
   nick:
     description: "Nick yourself with a RandomNickname!"
     aliases: [n,nickname]
+    permission: nick
+    
+permissions:
+ nick:
+  description: "Allow to give your a Random nick"
+  default: op
