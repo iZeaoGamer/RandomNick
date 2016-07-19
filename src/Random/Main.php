@@ -9,6 +9,7 @@ use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\Player;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as C;
 
 class Main extends PluginBase implements Listener {
