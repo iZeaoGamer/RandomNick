@@ -2,5 +2,5 @@
 
 ## How to use?
 /nick (to see all Commands!)
-<br>
+
 /nick random (and you become a Random Nick!)
