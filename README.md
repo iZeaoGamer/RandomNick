@@ -1,5 +1,5 @@
-## RandomNick plugin 1.0
+# # RandomNick plugin 1.0
 
-# How to use?
+## How to use?
 /nick (to see all Commands!)
 /nick random (and you become a Random Nick!)
