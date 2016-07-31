@@ -28,4 +28,6 @@ class Main extends PluginBase implements Listener {
     switch(strtolower($cmd)){
       case "nick":
         if(count($args) != 1){
-          $sender->sendMessage($this->prefix.C::GOLD."Benutze : /nick random");
+          $sender->sendMessage($this->prefix.C::GOLD."Use : /nick random");
+          $sender->sendTip($this->prefix.C::RED."Use : /nick random");
+          
