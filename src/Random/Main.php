@@ -3,31 +3,26 @@
 namespace Random;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\Random;
-use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\Player;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\utils\Config;
+use pocketmine\command\CommandExecutor;
 use pocketmine\utils\TextFormat as C;
+use pocketmine\utils\Config;
 
-class Main extends PluginBase implements Listener {
-  
-  public $prefix = TextFormat::GRAY."[".TextFormat::GOLD."Nick".TextFormat::GRAY."]".TextFormat::WHITE." ";
+class Main extends PluginBase {
   
   public function onEnable(){
-    $this->getLogger()->info($this->prefix.C::GREEN."Activated!");
-    $this->getServer()->getPluginManager()->registerEvents($this,$this);
+    $this->getLogger()->info(C::GREEN."Activated!");
   }
   public function onDisable(){
-    $this->getLogger()->info($this->prefix.C::RED."Deactivated!");
+    $this->getLogger()->info(C::RED."Deactivated!");
   }
   
-  public function onCommand(CommandSender $s, Command $cmd, array $args){
-    switch(strtolower($cmd)){
+  public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+    switch(strtolower($command)){
       case "nick":
         if(count($args) != 1){
-          $sender->sendMessage($this->prefix.C::GOLD."Use : /nick random");
-          $sender->sendTip($this->prefix.C::RED."Use : /nick random");
-          
+          $sender->sendMessage(C::WHITE."Use".C::GRAY.":".C::GOLD."/Nick Random");
+          $sender->sendTip(C::WHITE."Use".C::GRAY.":".C::GOLD."/Nick Random");
