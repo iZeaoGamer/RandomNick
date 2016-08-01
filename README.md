@@ -1,4 +1,4 @@
-# RandomNick plugin 1.0
+# RandomNick plugin
 
 ## How to use?
 /nick on (Nick yourself with a Random Nick!)
