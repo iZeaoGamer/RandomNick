@@ -5,11 +5,11 @@ api: 2.0.0
 author: UltimateDevs
 commands:
   nick:
-    description: "Nick yourself with a RandomNickname!"
+    description: "Nick yourself with a random nickname!"
     aliases: [n,nickname]
     permission: nick
     
 permissions:
  nick:
-  description: "Allow to give your a Random nick"
+  description: "Allow to give your a random nick"
   default: op
