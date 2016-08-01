@@ -13,6 +13,8 @@ use pocketmine\utils\Config;
 
 class Main extends PluginBase {
   
+  array() = []
+  
   public $nicks = ["LALA", "HUHU", "HAHA"];
   
   public function onEnable(){
