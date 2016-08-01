@@ -13,6 +13,8 @@ use pocketmine\utils\Config;
 
 class Main extends PluginBase {
   
+  public $this->nicks = ["LALA", "HUHU", "HAHA"];
+  
   public function onEnable(){
     $this->getLogger()->info(C::GREEN."Activated!");
   }
