@@ -57,6 +57,6 @@ class Main extends PluginBase {
         	$this->action_nick_off($sender);
         }
         break;
-     }
+    }
   }
 }
