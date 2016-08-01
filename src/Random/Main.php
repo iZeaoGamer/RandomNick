@@ -59,6 +59,7 @@ class Main extends PluginBase {
         elseif($args[0] == "off"){
         	$this->action_nick_off($sender);
         }
+        break;
      }
   }
 }
