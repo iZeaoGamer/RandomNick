@@ -1,6 +1,6 @@
 # RandomNick plugin 1.0
 
 ## How to use?
-/nick (to see all Commands!)
+/nick opn(Nick yourself with a Random Nick!)
 
-/nick random (and you become a Random Nick!)
+/nick off (Deactivate your nick)
