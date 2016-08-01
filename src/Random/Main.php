@@ -48,9 +48,9 @@ class Main extends PluginBase {
 		$player->setNameTag($player->getName());
 	}
   public function onCommand(CommandSender $sender, Command $command, $label, array $args){
-    switch(strtolower($command)){
+    switch(strtolower($command->getName())){
       case "nick":
-        if(strtolower($args[0]) === "on"{
+        if(strtolower($args[0]) === "on"){
         	$this->action_nick_on($sender);
         }
         elseif(strtolower($args[0]) === "off"){
