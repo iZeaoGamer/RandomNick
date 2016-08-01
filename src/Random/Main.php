@@ -9,13 +9,10 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
 use pocketmine\utils\TextFormat as C;
-use pocketmine\utils\Config;
 
 class Main extends PluginBase {
   
-  //array() = []
-  
-  public $nicks = ["LALA", "HUHU", "HAHA"];
+  public $nicks = ["LALA", "HUHU", "HAHA", "BubugagaLp"];
   
   public function onEnable(){
     $this->getLogger()->info(C::GREEN."Activated!");
