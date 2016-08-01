@@ -53,8 +53,12 @@ class Main extends PluginBase {
   public function onCommand(CommandSender $sender, Command $command, $label, array $args){
     switch(strtolower($command)){
       case "nick":
-        if(count($args) != 1){
-          $sender->sendMessage(C::WHITE."Use".C::GRAY.":".C::GOLD."/Nick Random");
-          $sender->sendTip(C::WHITE."Use".C::GRAY.":".C::GOLD."/Nick Random");
-          
-          mt_rand(0, );
+        if($args[0] == "on"{
+        	$this->action_nick_on($sender);
+        }
+        elseif($args[0] == "off"){
+        	$this->action_nick_off($sender);
+        }
+     }
+  }
+}
