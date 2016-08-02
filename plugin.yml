@@ -11,5 +11,5 @@ commands:
     
 permissions:
  nick:
-  description: "Allow to give your a random nick"
+  description: "Allow to give you a random nick"
   default: op
