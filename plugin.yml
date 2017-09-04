@@ -1,8 +1,8 @@
 name: RandomNick
 main: Random\Main
 version: 1.0
-api: 2.0.0
-author: UltimateDevs
+api: [3.0.0-ALPHA6, 3.0.1]
+author: UltimateDevs & Zeao
 commands:
   nick:
     description: "Nick yourself with a random nickname!"
