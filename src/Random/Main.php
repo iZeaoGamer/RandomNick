@@ -12,7 +12,7 @@ use pocketmine\utils\TextFormat as C;
 
 class Main extends PluginBase {
   
-  public $nicks = ["LALA", "HUHU", "HAHA", "BubugagaLp", "Binika", "Susages", "Bread", "Apple", "Lips", "BoyGotLove", "Kane", "School", "Lunch", "Dinner", "Breakfast", "Kiss", "Heart", "Newbie", "GirlGotLove", "Sing", "Horns"];
+  public $nicks = ["LALA", "HUHU", "HAHA", "BubugagaLp", "Binika", "Susages", "Bread", "Apple", "Lips", "BoyGotLove", "Kane", "School", "Lunch", "Dinner", "Breakfast", "Kiss", "Heart", "Newbie", "GirlGotLove", "Sing", "Horns", "Boons", "Lungs", "Stranger", "Pretty", "Scriminal", "Scammy", "MehAlt", "Strangle", "PvPGod123" ",ZImpersonate", "123Lol456", "ColdPlay", "Doni", "VMPE"];
   
   public function onEnable(){
     $this->getLogger()->info(C::GREEN."Activated!");
@@ -27,10 +27,10 @@ class Main extends PluginBase {
 			$pName = $player->getDisplayName();
 			unset($this->nicks[0]);
 			$this->nicks = array_values($this->nicks);
-			$player->sendMessage(C::BOLD.C::GRAY."[".C::BLUE."Nick".C::GRAY."]".C::YELLOW."Your Nick Name is ".C::BLUE.$player->getDisplayName().C::YELLOW."!");
+			$player->sendMessage(C::BOLD.C::GRAY."§r§6[".C::BLUE."§5VMPENick".C::GRAY."§6]".C::YELLOW."§r§3Your nick name, is now ".C::BLUE.$player->getDisplayName().C::YELLOW."§r§3!");
 		}
 		elseif(count($this->nicks) === 0){
-			$player->sendMessage(C::BOLD.C::GRAY."[".C::BLUE."Nick".C::GRAY."]".C::RED."No Nick Names Aviable!");
+			$player->sendMessage(C::BOLD.C::GRAY."§r§6[".C::BLUE."§5VMPENick".C::GRAY."§6]".C::RED."Sorry, but there are No Nick Names Aviable!");
 		}
 		else{
 			$nickNum = mt_rand(0, count($this->nicks)-1);
@@ -39,7 +39,7 @@ class Main extends PluginBase {
 			$pName2 = $player->getDisplayName();
 			unset($this->nicks[$nickNum]);
 			$this->nicks = array_values($this->nicks);
-			$player->sendMessage(C::BOLD.C::GRAY."[".C::BLUE."Nick".C::GRAY."]".C::YELLOW."Your Nick Name is ".C::BLUE.$player->getDisplayName().C::YELLOW."!");
+			$player->sendMessage(C::BOLD.C::GRAY."§r§6[".C::BLUE."§5VMPENick".C::GRAY."§6]".C::YELLOW."§r§3Your Nick Name is now ".C::BLUE.$player->getDisplayName().C::YELLOW."§3!");
 		}
 	}
 	public function action_nick_off($player){
