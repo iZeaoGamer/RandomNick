@@ -53,11 +53,11 @@ class Main extends PluginBase {
   public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
     switch(strtolower($command->getName())){
       case "nick":
-        if(strtolower($args[0]) === "on"){
+        	if(isset($args[0]) && strtolower($args[0]) == "on"){
         	$this->action_nick_on($sender);
 		return true;
         }
-        elseif(strtolower($args[0]) === "off"){
+        elseif(isset($args[0]) && strtolower($args[0]) == "off"){
         	$this->action_nick_off($sender);
         }
         return true;
