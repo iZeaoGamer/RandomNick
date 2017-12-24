@@ -6,7 +6,6 @@ author: UltimateDevs & Zeao
 commands:
   nick:
     description: "Nick yourself with a random nickname!"
-    aliases: [n,nickname]
     permission: nick
     
 permissions:
