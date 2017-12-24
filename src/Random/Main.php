@@ -60,8 +60,8 @@ class Main extends PluginBase {
         }
         elseif(isset($args[0]) && strtolower($args[0]) == "off"){
         	$this->action_nick_off($sender);
-		return true;
         }
+        return true;
         break;
     }
   }
