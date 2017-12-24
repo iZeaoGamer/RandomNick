@@ -49,6 +49,7 @@ class Main extends PluginBase {
 		array_push($this->nicks, $player->getDisplayName());
 		$player->setDisplayName($player->getName());
 		$player->setNameTag($player->getName());
+		return true;
 	}
   public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
     switch(strtolower($command->getName())){
@@ -59,8 +60,8 @@ class Main extends PluginBase {
         }
         elseif(isset($args[0]) && strtolower($args[0]) == "off"){
         	$this->action_nick_off($sender);
+		return true;
         }
-        return true;
         break;
     }
   }
