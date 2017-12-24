@@ -28,9 +28,11 @@ class Main extends PluginBase {
 			unset($this->nicks[0]);
 			$this->nicks = array_values($this->nicks);
 			$player->sendMessage(C::BOLD.C::GRAY."[".C::BLUE."Nick".C::GRAY."]".C::YELLOW."Your Nick Name is ".C::BLUE.$player->getDisplayName().C::YELLOW."!");
+			return true;
 		}
 		elseif(count($this->nicks) === 0){
 			$player->sendMessage(C::BOLD.C::GRAY."[".C::BLUE."Nick".C::GRAY."]".C::RED."No Nick Names Aviable!");
+			return true;
 		}
 		else{
 			$nickNum = mt_rand(0, count($this->nicks)-1);
@@ -40,6 +42,7 @@ class Main extends PluginBase {
 			unset($this->nicks[$nickNum]);
 			$this->nicks = array_values($this->nicks);
 			$player->sendMessage(C::BOLD.C::GRAY."[".C::BLUE."Nick".C::GRAY."]".C::YELLOW."Your Nick Name is ".C::BLUE.$player->getDisplayName().C::YELLOW."!");
+			return true;
 		}
 	}
 	public function action_nick_off($player){
@@ -52,10 +55,12 @@ class Main extends PluginBase {
       case "nick":
         if(strtolower($args[0]) === "on"){
         	$this->action_nick_on($sender);
+		return true;
         }
         elseif(strtolower($args[0]) === "off"){
         	$this->action_nick_off($sender);
         }
+        return true;
         break;
     }
   }
